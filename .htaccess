@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+
+php_flag default_Charset UTF-8
+
+<IfModule dir_module>
+    DirectoryIndex /index.php
+</IfModule>
+
+php_value max_execution_time 600
