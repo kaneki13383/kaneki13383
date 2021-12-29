@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    font-size: 1vw;
+    font-family: "Bips";
+}
+body{
+    background: url(/images/back_sign.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* Desktop version */
+@media screen and (min-width: 1878px){
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 700px;
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    input{
+        width: 36%;
+        margin-bottom: 4%; 
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1xp solid black;
+        background: transparent;
+        color: white;
+    }
+    button{
+        height: 7%;
+        width: 36%;
+        border: 1px solid white;
+        background: white;
+        color: black;
+        margin-bottom: 2%;
+        font-family: "Bips";
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    /* Божественная анимация кнопки*/
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn::after {
+        content: "";
+        transition: all .4s;
+    }
+    
+    .btn-white::after {
+        background-color: #fff;
+    }
+    
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    /* Конец божественной анимации кнопки*/
+    .back{
+        width: 37%;
+        text-align: center;
+    }
+}
+
+/* Reduced desktop version */
+@media screen and (min-width: 1700px) and (max-width: 1878px){
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 750px;
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    input{
+        width: 36%;
+        margin-bottom: 4%; 
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background: transparent;
+        color: white;
+    }
+    button{
+        height: 6%;
+        width: 36%;
+        border: 1px solid white;
+        background: white;
+        color: black;
+        margin-bottom: 2%;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    /* Божественная анимация кнопки*/
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn::after {
+        content: "";
+        transition: all .4s;
+    }
+    
+    .btn-white::after {
+        background-color: #fff;
+    }
+    
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    /* Конец божественной анимации кнопки*/
+    .back{
+        width: 37%;
+        margin-top: 1%;
+        text-align: center;
+    }
+}
+
+/* Laptop version */
+@media screen and (min-width: 1496px) and (max-width: 1700px){
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 520px;
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    input{
+        width: 36%;
+        margin-bottom: 4%; 
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background: transparent;
+        color: white;
+    }
+    .btn{
+        height: 7%;
+        width: 37%;
+        border: 1px solid white;
+        background: white;
+        color: black;
+        margin-bottom: 4%;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    /* Божественная анимация кнопки*/
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    }
+    
+    .btn::after {
+        content: "";
+        transition: all .4s;
+    }
+    
+    .btn-white::after {
+        background-color: #fff;
+    }
+    
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    /* Конец божественной анимации кнопки*/
+    .back{
+        width: 38%;
+        margin-top: -1%;
+        text-align: center;
+    }
+}
