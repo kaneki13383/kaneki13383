@@ -21,6 +21,7 @@
     if(!empty($_POST['s5'])){$s5 = (int)$_POST['s5'];}else{$s5 = 0;}
     
 ?>
+werwer
 
 <!DOCTYPE html>
 <html lang="ru">
